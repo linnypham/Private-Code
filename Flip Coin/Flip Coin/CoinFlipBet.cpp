@@ -1,5 +1,7 @@
 #include<iostream>
 #include<cstdlib>
+#include<windows.h>  
+
 
 using namespace std;
 
@@ -57,9 +59,11 @@ int main() {
 			cout << "You lost $" << money << endl;
 			money = 0;
 			cout << "You currently have $" << money << "." << endl;
-			break;
 		}
 	} while (money != 0);
+
+	system("pause");
+
 	return 0;
 }
 
